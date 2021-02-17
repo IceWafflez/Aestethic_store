@@ -3,14 +3,27 @@ body{
 }
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 23.4%;
-    display: inline-block;
-    margin: 0.6%;
+    /*display: block;*/
+    /*margin-left: auto;*/
+   /* margin-right: auto;*/
+    width: 98%;
+    /*display: inline-block;*/
+    /*margin: 0.6%;*/
 }
 
 #Galleri_tekst{
     text-align: center;
 }
+
+.bilde_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    margin-left: auto;
+    align-self: center;
+  }
+ /* .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }

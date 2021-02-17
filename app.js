@@ -13,7 +13,7 @@ app.use(express.json())
 app.post('/', (req, res) => {
   console.log('break');
   console.log(req.body) // <-- this will access the body of the post
-  fs.writeFile('data.txt', JSON.stringify(req.body), (err) => {
+  fs.appendFile('data.txt', JSON.stringify(req.body,null,2), (err) => {
     if (err) throw err;
     console.log("lagret til data.txt");
   })
