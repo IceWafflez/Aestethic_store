@@ -2,28 +2,57 @@ body{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
-img{
-    /*display: block;*/
-    /*margin-left: auto;*/
-   /* margin-right: auto;*/
-    width: 98%;
-    /*display: inline-block;*/
-    /*margin: 0.6%;*/
+* {
+  box-sizing: border-box;
 }
 
-#Galleri_tekst{
-    text-align: center;
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
 
-.bilde_container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-    margin-left: auto;
-    align-self: center;
+
+.bilde_cont {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.bilde_cont,
+.bilde_cont > .kort {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.kort {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.bilde_cont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.innhold {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .kort {
+    width: 50%;
   }
- /* .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .kort {
+    width: 100%;
   }
+}
