@@ -1,0 +1,116 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="index.html" class="logo">Aesthetic</a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="store.html">Store</a>
+          <a href="about.html">About</a>
+          <a href="photos.html">Photos</a>
+        </div>
+      </div>
+</header>
+
+
+<div id="screen">
+<div id="container">
+    <form method="POST" action="/">
+        <h1>
+            <i class="fas fa-shipping-fast"></i>
+            Info
+        </h1>
+        <div class="name">
+            <div>
+                <label for="f-name">First</label>
+                <input id="fnavn" type="text" name="f-name" placeholder="First name">
+            </div>
+            <div>
+                <label for="l-name">Last</label>
+                <input id="lnavn"type="text" name="l-name" placeholder="Last name">
+            </div>
+        </div>
+        <div class="street">
+            <label for="name">Street</label>
+            <input id="gate"type="text" name="address" placeholder="Street">
+        </div>
+        <div class="address-info">
+            <div>
+                <label for="city">City</label>
+                <input id="city"type="text" name="city" placeholder="City">
+            </div>
+            <div>
+                <label for="state">Mobile</label>
+                <input id="tlf"type="text" name="Mobile" placeholder="Number">
+            </div>
+            
+            <div>
+                <label for="zip">Post</label>
+                <input id="post"type="text" name="zip" placeholder="Post code">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <br>
+                <form autocomplete="off">
+                <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Country" autocomplete="new-password">
+                </div>
+
+              </form>
+
+            </div>
+        </div>
+        <!--
+        <h1> Payment Information
+        </h1>
+        <div class="cc-num">
+            <label for="card-num">Credit Card No.</label>
+            <input type="text" name="card-num">
+        </div>
+        <div class="cc-info">
+            <div>
+                <label for="card-num">Exp</label>
+                <input type="text" name="expire">
+            </div>
+            <div>
+                <label for="card-num">CCV</label>
+                <input type="text" name="security">
+            </div>
+        </div>
+    -->
+        <div class="btns">
+            <button onclick="window.location.href='store.html'">Back</button>
+            <button onclick="purchase()">Purchase</button>
+        </div>
+
+
+</div>
+</div>
+
+
+<script src="Land.js"></script>
+<script>
+    autocomplete(document.getElementById("myInput"), countries);
+    </script>
+
+<!--
+<footer id="footer">
+    <h1></h1>
+</footer>
+-->
+
+<script src="buy.js"></script>
+
+</body>
+</html>

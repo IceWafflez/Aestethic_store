@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="felles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Aesthetic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div id="container">
+    
+    <div class="header">
+        <h2>l Aesthetic l</h2>
+        <!--<img id="menybilde" src="/asstets/1-48-512.png" alt="meny knapp">-->
+      </div>
+      <div class="underheader">
+        <div class="grid-container">
+            <div class="item1" ><a href=index.html>Home</a></div>
+            <div class="item2"><a href=store.html>Store</a></div>
+            <div class="item3"><a href=about.html>About</a></div>  
+            <div class="item4"><a href=photos.html>Photos</a></div>
+          </div>
+        </div>
+
+<br></br>   
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="/asstets/white-interior.png" style="width:100%">
+    <div class="text">Jørgen Sorensen</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="/asstets/black-whole.jpg" style="width:100%">
+    <div class="text">Ming lai</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="/asstets/living-room.png" style="width:100%">
+    <div class="text">John Edwards</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="Slide.js"></script>
+
+<br>
+<div id="tabcont">
+  <div class="tab">
+    <button class="tablinks" onclick="navn(event, 'So')" id="defaultOpen">Jørgen Sorensen</button>
+    <button class="tablinks" onclick="navn(event, 'lai')">Ming Lai</button>
+    <button class="tablinks" onclick="navn(event, 'Jo')">John Edwards</button>
+    <button class="tablinks" onclick="navn(event, 'Te')">Teha Yudai</button>
+  </div>
+  
+  <div id="So" class="tabcontent">
+    <h3>Jørgen Sorensen</h3>
+    <p>Golden pencil 2015</p>
+    <p>Laigo Gold 2018</p>
+    <p>Hollywood pulitzer 2016</p>
+    <p>Nordic Design: Interior 2016</p>
+
+  </div>
+  
+  <div id="lai" class="tabcontent">
+    <h3>Ming Lai</h3>
+    <p>Veil 2020</p>
+    <p>El premiro español de interiorismo 2019</p>
+    <p>Cord interior 2019</p>
+    <p>The Arcane design prize 2017</p>
+  </div>
+  
+  <div id="Jo" class="tabcontent">
+    <h3>John Edwards</h3>
+    <p>Chongqing interior 2018</p>
+    <p>Runner up: Nordic Design: Interior 2016</p>
+    <p>London Interior: junior 2014</p>
+  </div>
+  <div id="Te" class="tabcontent">
+    <h3>Teah Yudai</h3>
+    <p> The Jade Palm 2020</p>
+    <p>Halo Interior 2020</p>
+    <p>Junior: Unity Interior 2018</p>
+    <p>Veil 2019</p>
+  </div>
+  </div>
+  <br>
+  <br>
+  <script>
+  function navn(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+  
+
+  <footer class="site-footer">
+      <div class="footer_tekst">
+          <h2>About:</h2>
+          <p class="footer_info">Aesthetic is a interior design service based on prize winning designers and their accolades.
+          </p>
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+            <a class="copyright_link"href="#">aesthetic</a>.
+               </p>
+        </div>
+      <div class="social_media">
+        <a href="https://www.facebook.com/" target="_blank"> 
+          <img src="/asstets/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://twitter.com/" target="_blank"> 
+          <img src="/asstets/twitter.svg" alt="twitter">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"> 
+          <img src="/asstets/insta.svg" alt="insta">
+        </a>
+        <a href="mailto:knsta001@osloskolen.no"> 
+          <img src="/asstets/mail.svg" alt="mail">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank"> 
+          <img src="/asstets/linkedin.svg" alt="linkedin">
+        </a>
+
+      </div>
+</footer>
+
+
+
+</body>
+</head>
+</html>

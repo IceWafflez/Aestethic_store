@@ -1,0 +1,76 @@
+body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+
+.info{
+    text-align: center;
+    width: 80vw;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: #29232342
+
+}
+.info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+#CEO_bilde{
+    text-align: center;
+    padding: 0px;
+}
+#CEO_bilde img{
+    width: 25%;
+    height: auto;
+    border: 5px ;
+    border-style: inset;
+}
+
+#Sosial_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    /*
+.navnet{
+    text-align: center;
+    background-color:#0000007e;
+    width: 100vw;
+    height: 7vh;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    border: solid red ;
+    background-color: #ffffff
+}
+.boks_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+*/
+
+/*
+#outer-div {
+    width: 100%;
+    text-align: center;
+    background-color: #0666a3
+  }
+  
+  #inner-div {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: #8ebf42
+  }
+*/
+
+
