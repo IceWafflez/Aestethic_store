@@ -1,3 +1,4 @@
+
 function purchase(){
     fetch('/', {
     method: 'POST',
