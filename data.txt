@@ -1,61 +1,11 @@
-{"user":{"name":"Knut","lastname":"Strandskogen","address":"marsveien 5b","city":"Oslo","mobile_number":"40523653","post":"0493","Country":"Turkmenistan"}}{"user":{"name":"andrea","lastname":"såtå jens","address":"veiviene 56","city":"bynavn","mobile_number":"12345678","post":"1234","Country":"Iceland"}}	{
+{
   "user": {
-    "name": "Knut",
-    "lastname": "Strandskogen",
-    "address": "marsveien 5b",
-    "city": "Oslo",
-    "mobile_number": "40523653",
-    "post": "0493",
-    "Country": "Uganda"
-  }
-}{
-  "user": {
-    "name": "Knut",
-    "lastname": "Strandskogen",
-    "address": "marsveien 5b",
-    "city": "Oslo",
-    "mobile_number": "40523653",
-    "post": "0493",
-    "Country": "Uganda"
-  }
-}{
-  "user": {
-    "name": "Knut",
-    "lastname": "Strandskogen",
-    "address": "marsveien 5b",
-    "city": "Oslo",
-    "mobile_number": "40523653",
-    "post": "0493",
-    "Country": "Uganda"
-  }
-}{
-  "user": {
-    "name": "Knut",
-    "lastname": "Strandskogen",
-    "address": "marsveien 5b",
-    "city": "Oslo",
-    "mobile_number": "40523653",
-    "post": "0493",
-    "Country": "Uganda"
-  }
-}{
-  "user": {
-    "name": "Knut",
-    "lastname": "Strandskogen",
-    "address": "marsveien 5b",
-    "city": "Oslo",
-    "mobile_number": "40523653",
-    "post": "0493",
-    "Country": "Uganda"
-  }
-}{
-  "user": {
-    "name": "Knut",
-    "lastname": "Strandskogen",
-    "address": "marsveien 5b",
-    "city": "Oslo",
-    "mobile_number": "40523653",
-    "post": "0493",
-    "Country": "North Korea"
+    "name": "user",
+    "lastname": "user",
+    "address": "street 1a",
+    "city": "city",
+    "mobile_number": "12345678",
+    "post": "1234",
+    "Country": "Usa"
   }
 }
