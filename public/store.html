@@ -22,12 +22,52 @@
       </div>
 </header>
 <br>
+
+<div id="JørgenNav" class="navlinks">
+  <a href="javascript:void(0)" class="lukk" onclick="closeNavJørgen()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">mail</a>
+    <a href="#">twitter</a>
+    <a href="#">linkedin</a>
+  </div>
+</div>
+
+<div id="JohnNav" class="navlinks">
+  <a href="javascript:void(0)" class="lukk" onclick="closeNavJohn()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">mail</a>
+    <a href="#">twitter</a>
+    <a href="#">linkedin</a>
+  </div>
+</div>
+
+<div id="MingNav" class="navlinks">
+  <a href="javascript:void(0)" class="lukk" onclick="closeNavMing()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">mail</a>
+    <a href="#">twitter</a>
+    <a href="#">linkedin</a>
+  </div>
+</div>
+
+<div id="TheaNav" class="navlinks">
+  <a href="javascript:void(0)" class="lukk" onclick="closeNavThea()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">mail</a>
+    <a href="#">twitter</a>
+    <a href="#">linkedin</a>
+  </div>
+</div>
+
+
+
 <div id=card_container>
   <div class="card">
     <img src="/asstets/avatar.png" alt="Avatar" style="width:100%">
     <div class="tekst_container">
       <h4><b>Jørgen Sorensen</b></h4> 
     <button class="b" onclick="window.location.href='form.html'">Contact</button>    
+    <button class="b" onclick="openNavJørgen()">Info</button>
     </div>
   </div>
   <div class="card">
@@ -35,6 +75,7 @@
     <div class="tekst_container">
       <h4><b>John Edwards</b></h4> 
       <button class="g" onclick="window.location.href='form.html'">Contact</button>
+      <button class="g" onclick="openNavJohn()">Info</button>
     </div>
   </div>
   <div class="card">
@@ -42,6 +83,7 @@
     <div class="tekst_container">
       <h4><b>Ming Lai</b></h4> 
       <button class="o" onclick="window.location.href='form.html'">Contact</button>
+      <button class="o" onclick="openNavMing()">Info</button>
     </div>
   </div>
   <div class="card">
@@ -49,9 +91,17 @@
     <div class="tekst_container">
       <h4><b>Thea Yudai</b></h4> 
       <button class="g" onclick="window.location.href='form.html'">Contact</button>
+      <button class="g" onclick="openNavThea()">Info</button>
     </div>
   </div>
 </div>
+
+
+<script src="InfoNav.js"></script>
+
+
+
+
 
 <footer class="site-footer">
     <div class="footer_tekst">
@@ -59,8 +109,10 @@
         <p class="footer_info">Aesthetic is a interior design service based on prize winning designers and their accolades.
         </p>
         <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-          <a class="copyright_link"href="#">aesthetic</a>.
+          <a class="copyright_link"href="parallax.html">aesthetic</a>.
              </p>
+             <a class="copyright-text"href="parallax.html"> Made by Berry</a>
+             <br>
       </div>
       <div class="social_media">
         <a href="https://www.facebook.com/" target="_blank"> 
