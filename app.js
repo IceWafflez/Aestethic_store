@@ -4,6 +4,8 @@ const port = 3000
 const fs = require('fs')
 app.use(express.static('public'))
 
+var mysql = require('mysql');
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
@@ -40,3 +42,46 @@ console.log = function(msg) {
 //proc.stderr.pipe(error);
 
 
+
+var connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "pswd",
+    database: "aestethic"
+});
+
+
+var bodyParser = require('body-parser');
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('public'));
+
+app.set('view engine', 'jade');
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', function (req, res) {
+    res.render('form.html');
+});
+
+app.post('/submit', urlencodedParser, function (req, res) {
+    console.log("Db conf");
+    console.log(req.body.name);
+    console.log(req.body.message);
+    connection.connect(function (err) {
+        if (err) throw err;
+        console.log("connected");
+        var sql = "INSERT INTO `users` (`name`,`message`) VALUES ('" + req.body.name + "', '" + req.body.message + "')";
+        connection.query(sql, function (err, result) {
+            if (err) throw err;
+            console.log("table created");
+        });
+    });
+    res.sendFile('public/index.html', { root: __dirname });
+});
+
+
+app.listen(3000, function () {
+    console.log('Listening on port 3000');
+});
