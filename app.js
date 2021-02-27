@@ -3,14 +3,16 @@ const app = express()
 const port = 3000
 const fs = require('fs')
 app.use(express.static('public'))
-
+app.use(express.json())
 var mysql = require('mysql');
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-app.use(express.json())
+app.get("*",(req,res) => {
+    res.sendFile(__dirname + "/public/404.html")
+})
 
 app.post('/', (req, res) => {
   console.log('break');
@@ -42,7 +44,7 @@ console.log = function(msg) {
 //proc.stderr.pipe(error);
 
 
-
+/*
 var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -84,4 +86,4 @@ app.post('/submit', urlencodedParser, function (req, res) {
 
 app.listen(3000, function () {
     console.log('Listening on port 3000');
-});
+});*/

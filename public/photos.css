@@ -18,39 +18,33 @@ body{
   margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column */
 .bilde_cont,
 .bilde_cont > .kort {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
 .kort {
   float: left;
   width: 25%;
 }
 
-/* Clear floats after rows */ 
 .bilde_cont:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .innhold {
   background-color: white;
   padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .kort {
     width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .kort {
     width: 100%;
