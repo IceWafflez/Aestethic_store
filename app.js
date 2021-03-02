@@ -31,19 +31,8 @@ console.log = function(msg) {
             return trueLog(err);
         }
     });
-    //trueLog(msg); //uncomment if you want logs
+    //trueLog(msg); 
 }
-*/
-
-
-//var access = fs.createWriteStream("/Users/knsta001/OneDrive - Oslo Kommune Utdanningsetaten/vgs/1/web/Butikk_fordypning" + '/node.access.txt', { fl ags: 'a' })
-  //    , error = fs.createWriteStream("/Users/knsta001/OneDrive - Oslo Kommune Utdanningsetaten/vgs/1/web/Butikk_fordypning" + '/node.error.txt', { flags: 'a' });
-
-// redirect stdout / stderr
-//proc.stdout.pipe(access);
-//proc.stderr.pipe(error);
-
-
 /*
 var connection = mysql.createConnection({
     host: "localhost",
