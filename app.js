@@ -33,46 +33,46 @@ console.log = function(msg) {
     });
     //trueLog(msg); 
 }
-/*
-var connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "pswd",
-    database: "aestethic"
+*/
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "myusername",
+  password: "mypassword"
 });
 
-
-var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('public'));
-
-app.set('view engine', 'jade');
-app.use(express.static(__dirname + '/public'));
-
-app.get('/', function (req, res) {
-    res.render('form.html');
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
 });
-
-app.post('/submit', urlencodedParser, function (req, res) {
-    console.log("Db conf");
-    console.log(req.body.name);
-    console.log(req.body.message);
-    connection.connect(function (err) {
-        if (err) throw err;
-        console.log("connected");
-        var sql = "INSERT INTO `users` (`name`,`message`) VALUES ('" + req.body.name + "', '" + req.body.message + "')";
-        connection.query(sql, function (err, result) {
-            if (err) throw err;
-            console.log("table created");
-        });
-    });
-    res.sendFile('public/index.html', { root: __dirname });
-});
-
-
 app.listen(3000, function () {
     console.log('Listening on port 3000');
-});*/
+});
+/*
+var sqlite3 = require('sqlite3').verbose();
+let db = new sqlite3.Database('./Aestethic.db', sqlite3.OPEN_READWRITE, (err) => {
+    if (err) {
+      console.error(err.message);
+    }
+    console.log('Connected to the database.');
+  });
+
+
+db.serialize(function() {
+  db.run("CREATE TABLE lorem (info TEXT)");
+
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i < 10; i++) {
+      stmt.run("Ipsum " + i);
+  }
+  stmt.finalize();
+
+  db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
+  });
+});
+
+
+
+  db.close();*/
