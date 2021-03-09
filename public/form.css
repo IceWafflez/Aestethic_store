@@ -88,13 +88,11 @@ label {
  width: 75px;
  padding-right: 20px;
 }
-
-
-.autocomplete {
-
-    display: inline-block;
+@media(max-width: 437px) {
+  .autocomplete {
+    width: auto !important;
+  }
 }
-
 * { box-sizing: border-box; }
 body {
   font: 16px Arial;
@@ -102,6 +100,7 @@ body {
 .autocomplete {
   position: relative;
   display: inline-block;
+  width: 300px;
 }
 input {
   border: 1px solid transparent;

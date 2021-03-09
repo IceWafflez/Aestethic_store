@@ -4,7 +4,7 @@
   "description": "",
   "main": "Land.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js && node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,6 @@
     "mysql": "^2.18.1",
     "sqlite3": "^5.0.2"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IceWafflez/Aestethic_store.git"

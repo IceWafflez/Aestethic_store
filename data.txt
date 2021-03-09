@@ -28,4 +28,14 @@
     "post": "1234",
     "Country": "Trinidad & Tobago"
   }
+}{
+  "user": {
+    "name": "user",
+    "lastname": "user",
+    "address": "street 1a",
+    "city": "city",
+    "mobile_number": "12345678",
+    "post": "1234",
+    "Country": "North Korea"
+  }
 }
